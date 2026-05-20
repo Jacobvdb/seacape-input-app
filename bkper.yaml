@@ -1,0 +1,28 @@
+id: seacape-input
+name: Seacape Input
+description: Register vendors, customers, ports and voyages with consistent shape in Seacape books.
+
+logoUrl: https://seacape-input.bkper.app/images/logo-light.svg
+logoUrlDark: https://seacape-input.bkper.app/images/logo-dark.svg
+
+website: https://seacape-input.bkper.app
+ownerName: Bkper
+ownerWebsite: https://bkper.com
+
+repoUrl: https://github.com/Jacobvdb/seacape-input-app
+repoPrivate: false
+
+developers: jacobvdb3
+users: jacobvdb3 davidpereira
+
+menuText: Seacape Input
+menuUrl: https://seacape-input.bkper.app?bookId=${book.id}
+menuUrlDev: http://localhost:5173?bookId=${book.id}
+menuPopupWidth: 560
+menuPopupHeight: 480
+
+deployment:
+  web:
+    main: packages/web/server/src/index.ts
+    client: packages/web/client
+  compatibility_date: '2026-01-28'
