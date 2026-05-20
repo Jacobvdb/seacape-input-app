@@ -2,8 +2,8 @@ id: seacape-input
 name: Seacape Input
 description: Register vendors, customers, ports and voyages with consistent shape in Seacape books.
 
-logoUrl: https://seacape-input.bkper.app/images/logo-light.svg
-logoUrlDark: https://seacape-input.bkper.app/images/logo-dark.svg
+logoUrl: https://seacape-input.bkper.app/images/logo.png
+logoUrlDark: https://seacape-input.bkper.app/images/logo.png
 
 website: https://seacape-input.bkper.app
 ownerName: Bkper
