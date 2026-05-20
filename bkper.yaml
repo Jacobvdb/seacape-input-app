@@ -13,7 +13,7 @@ repoUrl: https://github.com/Jacobvdb/seacape-input-app
 repoPrivate: false
 
 developers: jacobvdb3
-users: jacobvdb3 jacobvdb davidpereira *@seacape-shipping.com
+users: jacobvdb3 jacobvandenberg3 davidpereira *@seacape-shipping.com
 
 menuText: Seacape Input
 menuUrl: https://seacape-input.bkper.app?bookId=${book.id}
