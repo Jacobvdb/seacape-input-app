@@ -22,7 +22,6 @@ menuPopupWidth: 560
 menuPopupHeight: 480
 
 deployment:
-  web:
-    main: packages/web/server/src/index.ts
-    client: packages/web/client
+  server: server/src/index.ts
+  client: client
   compatibility_date: '2026-01-28'

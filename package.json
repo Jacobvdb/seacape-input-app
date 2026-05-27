@@ -1,26 +1,32 @@
 {
   "name": "seacape-input",
   "private": true,
-  "workspaces": [
-    "packages/web/client",
-    "packages/web/server"
-  ],
   "scripts": {
-    "clean": "bun run --filter \"./packages/**\" clean && rm -rf node_modules dist",
+    "clean": "rm -rf node_modules dist",
     "predev": "bun install",
-    "dev": "concurrently \"vite dev\" \"bkper app dev --web\"",
+    "dev": "concurrently \"vite dev\" \"bkper app dev\"",
     "dev:client": "vite dev",
-    "dev:server": "bkper app dev --web",
+    "dev:server": "bkper app dev",
     "prebuild": "bun install",
     "build": "vite build && bkper app build",
-    "deploy": "npm run build && bkper app deploy",
-    "deploy:preview": "npm run build && bkper app deploy --preview"
+    "deploy": "npm run build && bkper app sync && bkper app deploy",
+    "deploy:preview": "npm run build && bkper app sync && bkper app deploy --preview"
   },
   "devDependencies": {
-    "bkper": "^4",
+    "@bkper/bkper-api-types": "latest",
+    "bkper": "latest",
+    "@cloudflare/workers-types": "^4",
     "concurrently": "^9",
     "miniflare": "^4",
     "prettier": "^3",
+    "typescript": "^5",
     "vite": "^7"
+  },
+  "dependencies": {
+    "@bkper/web-auth": "latest",
+    "@bkper/web-design": "latest",
+    "bkper-js": "latest",
+    "hono": "^4",
+    "lit": "^3.3.2"
   }
 }

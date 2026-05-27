@@ -2,9 +2,9 @@ import { defineConfig } from 'vite';
 import { createBkperAuthMiddleware } from 'bkper/dev';
 
 export default defineConfig({
-    root: 'packages/web/client',
+    root: 'client',
     build: {
-        outDir: '../../../dist/web/client',
+        outDir: '../dist/client',
         emptyOutDir: true,
     },
     plugins: [
